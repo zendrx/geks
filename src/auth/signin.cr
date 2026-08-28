@@ -1,5 +1,4 @@
 require "crypto/bcrypt/password"
-require "jwt"
 
 module Geks
     class Auth
