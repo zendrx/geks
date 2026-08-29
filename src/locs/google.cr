@@ -2,7 +2,7 @@ require "http/client"
 
 module Geks::Data
     class Google
-        def search(city : String, country : String)
+        def self.search(city : String)
             params = URI::Params.encode({
                 "query" => city,
                 "type" => "business",
