@@ -42,6 +42,7 @@ module Geks::Data
                                 )
                                 return business
                             end
+                        end
                         else
                             500
                         end 
