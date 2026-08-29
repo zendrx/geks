@@ -2,7 +2,7 @@ require "http/client"
 require "json"
 
 module Geks::Data
-    class overture
+    class Overture
         BASE_URL = "https://api.overturemapsapi.com"
         def self.geocode(city : String, country : String)
             params = URI::Params.encode({
