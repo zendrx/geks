@@ -30,5 +30,8 @@ post "/api/signup" do |env|
          user_id = id[7..-1]
      db = Geks::Db::User.get_user_data(user_id)
      db.to_json
+     else
+     {"invalid or no user_id"}.to_json
+     end
  end
  
