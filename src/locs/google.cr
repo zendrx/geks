@@ -10,7 +10,8 @@ module Geks::Data
             })
             response = HTTP::Client.get(
                 "https://maps.googleapis.com/maps/api/place/textsearch/json",
-                query: params)
+                query: params
+                )
                 
                 data = JSON.parse(response.body)
                 if response.status_code == 200
@@ -45,3 +46,5 @@ module Geks::Data
                     end
                 end
             end
+        end
+            
